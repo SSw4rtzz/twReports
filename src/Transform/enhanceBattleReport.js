@@ -123,7 +123,7 @@ function enhanceBattleReport(gameDoc, report) {
     var launchRow = reportTable.insertRow(2);
 
     launchRow.insertCell(-1);
-    launchRow.cells[0].innerHTML = '<span title="the time the attacker sent the attack">Launched</span>';
+    launchRow.cells[0].innerHTML = '<span title="the time the attacker sent the attack">Enviado às: </span>';
     launchRow.insertCell(-1);
     launchRow.cells[1].innerHTML = timingInfo.launchTime.toHtml();
 
@@ -133,7 +133,7 @@ function enhanceBattleReport(gameDoc, report) {
     var returnRow = reportTable.insertRow(3);
     returnRow.insertCell(-1);
     if (showReturnTime) {
-        returnRow.cells[0].innerHTML = '<span title="the time the attacking troops return to the attacker\'s village">Returns</span>';
+        returnRow.cells[0].innerHTML = '<span title="the time the attacking troops return to the attacker\'s village">Volta às: </span>';
         returnRow.insertCell(-1);
         returnRow.cells[1].innerHTML = timingInfo.returnTime.toHtml();
     }
